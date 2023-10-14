@@ -1,0 +1,536 @@
+*,:before,:after {
+    box-sizing : border-box;
+    border-width : 0;
+    border-style : solid;
+    border-color : #e5e7eb
+}
+
+html { 
+    line-height : 1.5;
+    -webkit-text-size-adjust : 100%;
+    -moz-tab-size : 4;
+    -o-tab-size : 4;
+    tab-size : 4;
+    font-family : ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Segoe UI Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji"
+}
+
+body { 
+    margin : 0;
+    line-height : inherit
+}
+
+hr {
+    height : 0;
+    color : inherit;
+    border-top-width : 1px
+}
+
+abbr:where([title]) {
+    text-decoration : underline;
+    -webkit-text-decoration : underline dotted;
+    text-decoration : underline dotted
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size : inherit;
+    font-weight : inherit
+}
+
+a {
+    color : inherit;
+    text-decoration : inherit
+}
+
+b,strong{
+    font-weight : bolder
+}
+
+code,kbd,samp,pre{
+    font-family : ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-size : 1em
+}
+
+small { 
+    font-size : 80%
+}
+
+sub,sup {
+    font-size : 75%;
+    line-height : 0;
+    position : relative;
+    vertical-align : baseline
+}
+
+sub {
+    bottom : -.25em
+}
+
+sup {
+    top : -.5em
+}
+
+table {
+    text-indent : 0;
+    border-color : inherit;
+    border-collapse : collapse
+}
+
+button,input,optgroup,select,textarea{
+    font-family : inherit;
+    font-size : 100%;
+    font-weight : inherit;
+    line-height : inherit;
+    color : inherit;
+    margin : 0;
+    padding : 0
+}
+    
+button,select {
+    text-transform : none
+}
+
+button,[type=button],[type=reset],[type=submit] { 
+    -webkit-appearance : button;
+    background-color : transparent;
+    background-image : none
+}
+
+:-moz-focusring {
+    outline:auto
+}
+
+:-moz-ui-invalid {
+    box-shadow:none
+}
+
+progress{vertical-align:baseline}
+::-webkit-inner-spin-button,::-webkit-outer-spin-button {
+    height : auto
+}
+
+[type=search] { 
+    -webkit-appearance : textfield;
+    outline-offset : -2px
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance : none
+}
+
+::-webkit-file-upload-button { 
+    -webkit-appearance : button; 
+    font : inherit
+}
+
+summary {
+    display : list-item
+}
+
+blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre { 
+    margin : 0
+}
+
+fieldset {
+    margin : 0;
+    padding : 0
+}
+
+legend { 
+    padding : 0
+}
+
+ol,ul,menu {
+    list-style : none;
+    margin : 0;
+    padding : 0
+}
+
+textarea {
+    resize : vertical
+}
+
+input::-moz-placeholder,textarea::-moz-placeholder {
+    opacity : 1;
+    color : #9ca3af
+}
+
+input::placeholder,textarea::placeholder {
+    opacity : 1;
+    color : #9ca3af
+}
+
+button,[role=button] { 
+    cursor : pointer
+}
+
+:disabled {
+    cursor : default
+}
+
+img,svg,video,canvas,audio,iframe,embed,object {
+    display : block;
+    vertical-align : middle;
+}
+
+img,video {
+    max-width : 100%;
+    height : auto
+}
+
+[hidden] {
+    display : none     /* <--------------------------------------------------------------------------*/
+}
+
+@font-face {
+    font-family : ArchivoVariable;
+    font-style : normal;
+    font-display : swap;
+    font-weight : 100 900;
+    src : url(/_astro/archivo-latin-variable-wghtOnly-normal.68c831b3.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD
+}
+
+@font-face {
+    font-family : ArchivoVariable;
+    font-style : normal;
+    font-display : swap;
+    font-weight : 100 900;
+    src : url(/_astro/archivo-latin-ext-variable-wghtOnly-normal.95835b86.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF
+}
+
+@font-face {
+    font-family : ArchivoVariable;
+    font-style : normal;
+    font-display : swap;
+    font-weight : 100 900;
+    src : url(/_astro/archivo-vietnamese-variable-wghtOnly-normal.f5d14e3b.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB
+}
+
+a:where(.astro-RYVHZZAW) {
+    display : inline-flex;
+    font-weight : var(--font-semibold);
+    overflow : hidden;
+    position : relative
+}
+
+a:where(.astro-RYVHZZAW):after{
+    background-color : var(--color);
+    bottom : var(--size-px);
+    content : "";
+    height : 2px;
+    left : 0;
+    opacity : 0;
+    position : absolute;
+    transform : translate(-100%);
+    width : 100%
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:where(.astro-RYVHZZAW):after {
+        transition : opacity var(--duration-300) var(--ease),transform var(--duration-300) var(--ease)
+    }
+}
+
+a:where(.astro-RYVHZZAW):focus {
+    outline : none
+}
+
+@media (hover: hover) {
+    a:where(.astro-RYVHZZAW):hover:after {
+        opacity : 1;
+        transform : translate(0)
+    }
+}
+
+a:where(.astro-RYVHZZAW):focus-visible:after {
+    opacity : 1;
+    transform : translate(0)
+}
+
+footer:where(.astro-MH6ITKC3) {
+    color : var(--color-dimmed);
+    font-size : var(--text-sm);
+    margin-top : var(--size-3);
+    text-align : center
+}
+
+.coffeeIcon:where(.astro-MH6ITKC3) {
+    --size :  1.4rem;
+    display : inline;
+    fill : var(--color-dimmed);
+    height : 1.4rem;
+    height : var(--size);
+    margin-left : var(--size-px);
+    margin-right : var(--size-px);
+    vertical-align : text-bottom;
+    width : 1.4rem;
+    width : var(--size)
+}
+
+button:where(.astro-LFOLUAXZ) {
+    --animation-duration : var(--duration-400);
+    align-items : center;
+    background : none;
+    border : none;
+    border-radius : var(--rounded-full);
+    cursor : pointer;
+    display : none;
+    height : var(--size-7);
+    justify-content : center;
+    outline : none;
+    padding : 0;
+    position : relative;
+    right : calc(var(--size-1) * -.5);
+    top : var(--size-npx);
+    touch-action : manipulation;
+    width : var(--size-7)
+}
+
+button:where(.astro-LFOLUAXZ):focus {
+    outline : none
+}
+
+button:where(.astro-LFOLUAXZ):focus-visible {
+    box-shadow : 0 0 0 2px var(--bg-color),0 0 0 4px var(--color)
+}
+
+@media (min-width: 360px) {
+    button:where(.astro-LFOLUAXZ) {
+        display:flex
+    }
+}
+
+svg:where(.astro-LFOLUAXZ) {
+    stroke-linecap : round
+}
+
+svg:where(.astro-LFOLUAXZ)>.moon:where(.astro-LFOLUAXZ),svg:where(.astro-LFOLUAXZ)>.sun:where(.astro-LFOLUAXZ),svg:where(.astro-LFOLUAXZ)>.sun-beams:where(.astro-LFOLUAXZ) {
+    transform-origin : center
+}
+
+svg:where(.astro-LFOLUAXZ)>.moon:where(.astro-LFOLUAXZ),svg:where(.astro-LFOLUAXZ)>.sun:where(.astro-LFOLUAXZ){fill:var(--color-dimmed)}button:where(.astro-LFOLUAXZ):focus-visible svg:where(.astro-LFOLUAXZ)>.moon:where(.astro-LFOLUAXZ) {
+    fill : var(--color)
+}
+
+button:where(.astro-LFOLUAXZ):focus-visible svg:where(.astro-LFOLUAXZ)>.sun:where(.astro-LFOLUAXZ) {
+    fill : var(--color)
+}
+
+@media (hover: hover) {
+    button:where(.astro-LFOLUAXZ):hover svg:where(.astro-LFOLUAXZ)>.moon:where(.astro-LFOLUAXZ),button:where(.astro-LFOLUAXZ):hover svg:where(.astro-LFOLUAXZ)>.sun:where(.astro-LFOLUAXZ) {
+        fill : var(--color)
+    }
+}
+
+svg:where(.astro-LFOLUAXZ)>.sun-beams:where(.astro-LFOLUAXZ){stroke:var(--color-dimmed);stroke-width:2px}button:where(.astro-LFOLUAXZ):focus-visible svg:where(.astro-LFOLUAXZ)>.sun-beams:where(.astro-LFOLUAXZ) {
+    stroke:var(--color)
+}
+
+@media (hover: hover) {
+    button:where(.astro-LFOLUAXZ):hover svg:where(.astro-LFOLUAXZ)>.sun-beams:where(.astro-LFOLUAXZ) {
+        stroke:var(--color)
+    }
+}
+
+html.dark svg:where(.astro-LFOLUAXZ)>.sun:where(.astro-LFOLUAXZ) {
+    transform:scale(1.75)
+}
+
+html.dark svg:where(.astro-LFOLUAXZ)>.sun-beams:where(.astro-LFOLUAXZ) {
+    opacity : 0
+}
+
+html.dark svg:where(.astro-LFOLUAXZ)>.moon:where(.astro-LFOLUAXZ)>circle:where(.astro-LFOLUAXZ) {
+    transform : translate(-7px)
+}
+
+@supports (cx: 1) {
+    html.dark svg:where(.astro-LFOLUAXZ)>.moon:where(.astro-LFOLUAXZ)>circle:where(.astro-LFOLUAXZ) {
+        cx:17;transform:translate(0)
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) { 
+    svg:where(.astro-LFOLUAXZ)>.sun:where(.astro-LFOLUAXZ) {
+        transition : transform var(--animation-duration) var(--ease-elastic)
+    }
+    svg:where(.astro-LFOLUAXZ)>.sun-beams:where(.astro-LFOLUAXZ) {
+        transition : transform var(--animation-duration) var(--ease-elastic),opacity var(--animation-duration) var(--ease)
+    }svg:where(.astro-LFOLUAXZ) .moon:where(.astro-LFOLUAXZ)>circle:where(.astro-LFOLUAXZ){transition:transform calc(var(--animation-duration) / 2) var(--ease-out)
+    }
+    @supports (cx: 1) {
+        svg:where(.astro-LFOLUAXZ) .moon:where(.astro-LFOLUAXZ)>circle:where(.astro-LFOLUAXZ) {
+            transition : cx calc(var(--animation-duration) / 2) var(--ease-out)
+        }
+    }
+    html.dark svg:where(.astro-LFOLUAXZ)>.sun:where(.astro-LFOLUAXZ) {
+        transform : scale(1.75);
+        transition-duration : calc(var(--animation-duration) / 2);
+        transition-timing-function : var(--ease)
+    }
+    html.dark svg:where(.astro-LFOLUAXZ)>.sun-beams:where(.astro-LFOLUAXZ) {
+        transform : rotate(-25deg);
+        transition-duration : calc(var(--animation-duration) / 4)
+    }
+    html.dark svg:where(.astro-LFOLUAXZ)>.moon:where(.astro-LFOLUAXZ)>circle:where(.astro-LFOLUAXZ) {
+        transition-delay : calc(var(--animation-duration) / 4);
+        transition-duration : var(--animation-duration)
+    }
+}
+
+header:where(.astro-HNHH3BFE) {
+    align-items : center;
+    color : var(--color-dimmed);
+    display : flex;
+    font-weight : var(--font-medium);
+    gap : var(--size-3);
+    justify-content : flex-end;
+    left : var(--size-5);
+    position : absolute;
+    right : var(--size-5);
+    top : var(--size-5)
+}
+
+.infos:where(.astro-HNHH3BFE) {
+    align-items : center;
+    display : flex;
+    gap : var(--size-3)
+}
+
+.title:where(.astro-HNHH3BFE) {
+    font-size : var(--size-7);
+    margin-bottom : 0
+}
+
+nav:where(.astro-HNHH3BFE) { 
+    align-items : center;
+    display : none;
+    gap : var(--size-3)
+}
+
+@media (min-width: 480px) {
+    nav:where(.astro-HNHH3BFE) {
+        display : flex
+    }
+}
+
+ul:where(.astro-HNHH3BFE) { 
+    display : flex;
+    gap : var(--size-3)
+}
+
+.resource:where(.astro-HNHH3BFE) {
+    font-weight : var(--font-medium)
+}
+
+a:where(.astro-57XFGQMY) {
+    background-color : var(--bg-color);
+    border : 2px solid var(--color);
+    color : var(--color);
+    left : -500%;
+    outline : none;
+    padding : var(--size-2) var(--size-3);
+    position : absolute;
+    -webkit-text-decoration : none;
+    text-decoration : none;
+    top : var(--size-2)
+}
+
+a:where(.astro-57XFGQMY):focus-visible {
+    left :var(--size-2)
+}
+
+:where(html):where(.astro-QO5XHE7C) {
+    --duration-300 : .3s;
+    --duration-400 : .4s;
+    --duration-500 : .5s;
+    --duration-1200 : 1.2s;
+    --duration-3000 : 3s;
+    --ease : cubic-bezier(.25, 0, .3, 1);
+    --ease-elastic : cubic-bezier(.5, 1.25, .75, 1.25);
+    --ease-out : cubic-bezier(0, 0, 0, 1);
+    --font-normal : 400;
+    --font-medium : 500;
+    --font-semibold : 600;
+    --font-extrabold : 800;
+    --line-height-6 : 1.5rem;
+    --line-height-7 : 1.75rem;
+    --line-height-8 : 2rem;
+    --rounded-full : 1e5px;
+    --size-npx : -1px;
+    --size-px : 1px;
+    --size-1 : .25rem;
+    --size-2 : .5rem;
+    --size-3 : .825rem;
+    --size-4 : 1rem;
+    --size-5 : 1.15rem;
+    --size-6 : 1.5rem;
+    --size-7 : 1.75rem;
+    --size-8 : 2rem;
+    --size-17 : 12rem;
+    --size-21 : 64rem;
+    --text-sm : .875rem;
+    --text-base : 1rem;
+    --text-xl : 1.25rem ;
+    --zinc-50 : hsl(0, 0%, 98%);
+    --zinc-200 : hsl(240, 6%, 90%);
+    --zinc-300 : hsl(240, 5%, 84%);
+    --zinc-350 : hsl(240, 5%, 75%);
+    --zinc-700 : hsl(240, 5%, 26%);
+    --zinc-850 : hsl(240, 5%, 13%); 
+    --zinc-950 : hsl(240, 10%, 4%)
+}
+
+:where(html):where(.astro-QO5XHE7C) {
+    color-scheme : light;
+    --color : var(--zinc-950);
+    --color-dimmed : var(--zinc-850);
+    --bg-color : var(--zinc-50);
+    --grid-border-color : var(--zinc-350);
+    --grid-color : var(--zinc-200);
+    --selection-color : hsl(213, 94%, 68%);
+    --shadow-color : hsla(240, 5%, 13%, .5)
+}
+
+:where(html).dark:where(.astro-QO5XHE7C) {
+    color-scheme : dark;
+    --color : var(--zinc-50);
+    --color-dimmed : var(--zinc-300);
+    --bg-color : var(--zinc-950);
+    --grid-border-color : var(--zinc-700);
+    --grid-color : var(--zinc-850);
+    --selection-color : hsl(224, 76%, 48%);
+    --shadow-color : hsla(240, 5%, 84%, .5)
+}
+
+@font-face {
+    font-family : Archivo-fallback;
+    size-adjust : 98.44%;
+    src : local("Arial")
+}
+
+body {
+    --grid-spacing : 21px;
+    background-image : linear-gradient(var(--grid-color) var(--size-px),transparent var(--size-px)),linear-gradient(to right,var(--grid-color) var(--size-px),var(--bg-color) var(--size-px));
+    background-size : 21px 21px;
+    background-size : var(--grid-spacing) var(--grid-spacing);
+    color : var(--color);
+    font-family : ArchivoVariable,Archivo-fallback,sans-serif;
+    font-weight : var(--font-normal);
+    line-height : var(--line-height-7)
+}
+
+.app:where(.astro-QO5XHE7C) {
+    margin-left : auto;
+    margin-right : auto;
+    max-width : var(--size-21);
+    padding : var(--size-4);
+    position : relative
+}
+
+::-moz-selection {
+    background-color : var(--selection-color)
+}
+
+::selection {
+    background-color : var(--selection-color)
+}
