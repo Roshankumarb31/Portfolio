@@ -1,0 +1,11 @@
+span:where(.astro-2U6PRFZG) {
+    border : 0px;
+    clip : rect(0,0,0,0);
+    height : var(--size-px);
+    margin : var(--size-npx);
+    overflow : hidden;
+    padding : 0;
+    position : absolute;
+    white-space : nowrap;
+    width : var(--size-px)
+}
